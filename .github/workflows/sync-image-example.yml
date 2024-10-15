@@ -1,5 +1,5 @@
 name: Sync Image to Aliyun  Example
-#0.1.3
+#0.1.4
 on:
   push:
     branches: [ "main" ]
@@ -27,7 +27,7 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/licoy/voapi:latest docker://crpi-p4uvabvsouo615nw.cn-qingdao.personal.cr.aliyuncs.com/sijin_docker/voapi:latest
+         skopeo copy docker://docker.io/voapi/voapi:latest docker://crpi-p4uvabvsouo615nw.cn-qingdao.personal.cr.aliyuncs.com/sijin_docker/voapi:latest
          
          
          
