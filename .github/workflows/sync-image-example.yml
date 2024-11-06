@@ -28,7 +28,7 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/lobehub/lobe-chat:latest docker://crpi-p4uvabvsouo615nw.cn-qingdao.personal.cr.aliyuncs.com/sijin_docker/lobe-chat:latest
+         skopeo copy docker://docker.io/voapi/voapi:latest docker://crpi-p4uvabvsouo615nw.cn-qingdao.personal.cr.aliyuncs.com/sijin_docker/voapi:latest
          
          
          
