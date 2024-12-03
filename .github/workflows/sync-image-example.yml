@@ -1,5 +1,5 @@
 name: Sync Image to Aliyun  Example
-#0.2.2
+#0.3.2
 #1.28.0
 on:
   push:
