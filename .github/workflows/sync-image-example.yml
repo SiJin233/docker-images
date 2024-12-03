@@ -1,6 +1,6 @@
 name: Sync Image to Aliyun  Example
 #0.3.2
-#1.28.0
+#1.35.6
 on:
   push:
     branches: [ "main" ]
@@ -25,10 +25,10 @@ jobs:
         username: ${{secrets.DOCKER_USERNAME}}
         password: ${{secrets.DOCKER_PASSWORD}}
         logout: false
-
+#lobehub/lobe-chat
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/voapi/voapi:latest docker://crpi-p4uvabvsouo615nw.cn-qingdao.personal.cr.aliyuncs.com/sijin_docker/voapi:latest
+         skopeo copy docker://docker.io/lobehub/lobe-chat:latest docker://crpi-p4uvabvsouo615nw.cn-qingdao.personal.cr.aliyuncs.com/sijin_docker/lobe-chat:latest
          
          
          
