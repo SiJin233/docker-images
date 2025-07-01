@@ -1,5 +1,5 @@
 name: Sync Image to Aliyun  Example
-#6
+#7
 on:
   push:
     branches: [ "main" ]
